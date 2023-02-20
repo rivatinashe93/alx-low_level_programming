@@ -1,13 +1,19 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i;
-for (i = 122; i >= 97; i--)
+int letter = 122;
+while (letter >= 97)
 {
-putchar(i);
+putchar(letter);
+letter--;
 }
 putchar('\n');
-return 0;
+return (0);
 }
 
