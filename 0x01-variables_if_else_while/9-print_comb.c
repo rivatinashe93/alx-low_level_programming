@@ -1,22 +1,18 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
-int i, j;
+int i;
 for (i = 0; i < 10; i++)
 {
-for (j = i + 1; j < 10; j++)
+putchar(i + '0'); /* print the first digit */
+if (i != 9) /* don't print the comma after the last digit */
 {
-putchar(i + '0');
-putchar(j == 9 ? '\n' : ',');
-putchar(j == 9 ? '\0' : ' ');
+putchar(','); /* print the comma */
+putchar(' '); /* print the space */
 }
 }
-return (0);
+putchar('\n'); /* print the newline character */
+return 0;
 }
 
