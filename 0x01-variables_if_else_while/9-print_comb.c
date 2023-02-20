@@ -1,18 +1,23 @@
 #include <stdio.h>
 
+/**
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+int n;
+for (n = 48; n < 58; n++)
 {
-putchar(i + '0'); /* print the first digit */
-if (i != 9) /* don't print the comma after the last digit */
+putchar(n);
+if (n != 57)
 {
-putchar(','); /* print the comma */
-putchar(' '); /* print the space */
+putchar(',');
+putchar(' ');
 }
 }
-putchar('\n'); /* print the newline character */
+putchar('\n');
 return (0);
 }
+
 
