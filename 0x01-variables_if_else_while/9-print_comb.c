@@ -7,21 +7,16 @@
  */
 int main(void)
 {
-int tens_digit, ones_digit;
-for (tens_digit = 0; tens_digit < 10; tens_digit++)
+int i, j;
+for (i = 0; i < 10; i++)
 {
-for (ones_digit = tens_digit + 1; ones_digit < 10; ones_digit++)
+for (j = i + 1; j < 10; j++)
 {
-putchar(tens_digit + '0');
-putchar(ones_digit + '0');
-if (tens_digit < 8 || ones_digit < 9)
-{
-putchar(',');
-putchar(' ');
+putchar(i + '0');
+putchar(j == 9 ? '\n' : ',');
+putchar(j == 9 ? '\0' : ' ');
 }
 }
-}
-putchar('\n');
 return (0);
 }
 
