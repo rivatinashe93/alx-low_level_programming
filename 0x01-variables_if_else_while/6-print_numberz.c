@@ -1,12 +1,11 @@
 int main(void)
 {
-int digit = 0;
-while (digit < 10)
+int i;
+for (i = 0; i < 10; i++)
 {
-putchar(digit + '0');
-digit++;
+putchar(i + '0');
 }
 putchar('\n');
-return (0);
+return 0;
 }
 
