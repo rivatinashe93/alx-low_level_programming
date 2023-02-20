@@ -13,6 +13,6 @@ putchar(' '); /* print the space */
 }
 }
 putchar('\n'); /* print the newline character */
-return 0;
+return (0);
 }
 
